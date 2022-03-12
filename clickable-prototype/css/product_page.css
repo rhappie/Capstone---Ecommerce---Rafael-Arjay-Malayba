@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    background-color: #1B1A17;
+    position: sticky;
+    top: 0;
+}
+    header a>img{
+        width: 25px;
+    }
+    header a{
+        text-decoration: none;
+        color: #ECB365;
+        font-size: 24px;
+    }
+    header a+a{
+        margin-left: calc(100% - 340px);
+        font-size: 18px;
+        color: white;
+    }
+div.content{
+    max-width: 1280px;
+    min-width: 590px;
+    margin: auto;
+    padding: 10px;
+}
+div.container_filter{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 30px 10px;
+    width: 200px;
+    border: 2px solid black;
+}
+    h4{
+        margin-top: 20px;
+    }
+    div.container_filter>form>input{
+        display: inline-block;
+        width: calc(100% - 25px);
+        padding: 5px 10px;
+    }
+    div.container_filter>form>img{
+        width: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    div.container_filter>ul{
+        margin: 10px 0px 0px 20px;
+        list-style-type: none;
+    }
+    div.container_filter>ul>li{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+div.container_product_list{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 205px);
+    border: 2px solid black;
+    padding: 10px 10px 30px 10px;
+}
+    div.container_product_list h2, div.container_product_list>nav{
+        display: inline-block;
+    }
+    div.container_product_list>h2+nav{
+        margin-left: calc(100% - 330px);
+    }
+        div.container_product_list>h2+nav>*:not(span+a){
+            border-right: 1px solid black;
+            padding: 3px 5px;
+        }
+    div.container_product_list>form{
+        margin-left: calc(100% - 185px);
+    }
+    div.container_product_list>div+nav{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    div.container_product_list>div+nav>*:not(#last){
+        border-right: 1px solid black;
+        padding: 3px 5px;
+    }
+div.container_product{
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+    margin: 0px 2.5%;
+}
+    div.container_product>a{
+        text-decoration: none;
+        color: black;
+    }
+    div.container_product>a>img{
+        width: 100%;
+        height: calc(100% - 40px);
+    }
+    div.container_product>a>img+p{
+        position: relative;
+        left: 40px;
+    }
+    div.container_product>a>p{
+        text-align: center;
+    }

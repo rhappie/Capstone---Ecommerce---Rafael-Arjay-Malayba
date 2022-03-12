@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    background-color: #1B1A17;
+    position: sticky;
+    top: 0;
+}
+    header a>img{
+        width: 25px;
+    }
+    header a{
+        text-decoration: none;
+        color: #ECB365;
+        font-size: 24px;
+    }
+    header a+a{
+        margin-left: calc(100% - 340px);
+        font-size: 18px;
+        color: white;
+    }
+div.content{
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+    div.content>table{
+        width: 100%;
+        margin: 20px auto 5px auto;
+        border-collapse: collapse;
+    }
+    div.content>table>thead{
+        background-color: #ECB365;
+        border: 1px solid #1B1A17;
+    }
+    div.content>table>tbody{
+        border: 1px solid #1B1A17;
+    }
+    div.content>table td{
+        padding: 5px;
+        text-align: center;
+    }
+        div.content>table td>a{
+            margin-left: 10px;
+        }
+        div.content>table td>img{
+            width: 18px;
+            vertical-align: bottom;
+            cursor: pointer;
+        }
+    div.content>h4{
+        text-align: right;
+        margin-bottom: 5px;
+    }
+    div.content>a{
+        text-decoration: none;
+        padding: 3px 10px;
+        color: #1B1A17;
+        border: 2px solid #ECB365;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: calc(100% - 145px);
+    }
+    div.content>form{
+        width: fit-content;
+    }
+        div.content>form>table td{
+            padding: 3px 0px;
+        }
+        div.content>form>input[type=submit]{
+            background-color: #ECB365;
+            border: 2px solid #1B1A17;
+            border-radius: 3px;
+            padding: 5px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 0px 0px calc(100% - 70px);
+        }
+        div.content>form>table+h2{
+            margin-top: 10px;
+        }
+#card_input td{
+    padding-top: 20px;
+}
