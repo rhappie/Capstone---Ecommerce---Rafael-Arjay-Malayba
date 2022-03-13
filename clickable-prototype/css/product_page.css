@@ -71,7 +71,7 @@ div.container_product_list{
         display: inline-block;
     }
     div.container_product_list>h2+nav{
-        margin-left: calc(100% - 330px);
+       float: right;
     }
         div.container_product_list>h2+nav>*:not(span+a){
             border-right: 1px solid black;

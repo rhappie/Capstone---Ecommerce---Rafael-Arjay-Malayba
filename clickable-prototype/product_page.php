@@ -1,14 +1,19 @@
+<!-- 
+    This is the front page when a user visit the website. It lists all products. 
+    Owner: Rafael Arjay Malayba
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product page | DOjo Factory</title>
+    <title>Product page | Dojo Factory</title>
     <link rel="stylesheet" href="css/product_page.css">
 </head>
 <body>
-<?php include_once('partials/header.php'); ?>
+<!-- call of header for the page -->
+<?php include_once('partials/header.php'); ?> 
     <div class="content">
         <div class="container_filter">
             <form action="" method="POST">
@@ -25,7 +30,7 @@
             </ul>
         </div>
         <div class="container_product_list">
-            <h2>Tshirts (page 2)</h2>
+            <h2>All Items (page 2)</h2>
             <nav>
                 <a href="">first</a>
                 <a href="">prev</a>
@@ -40,7 +45,8 @@
                     <option value="popular">Most Popular</option>
                 </select>
             </form>
-<?php for($i=1; $i<=15;$i++) { ?>
+<!-- manual listing of items. No backend for the meantime -->
+<?php for($i=1; $i<=3;$i++) { ?>
             <div class="container_product">
                 <a href="item_page.php">
                     <img src="img/blackbelt.jpg" alt="product_image">
@@ -49,6 +55,43 @@
                 </a>
             </div>
 <?php } ?>
+<?php for($i=1; $i<=3;$i++) { ?>
+            <div class="container_product">
+                <a href="item_page.php">
+                    <img src="img/tshirt.jpg" alt="product_image">
+                    <p>$9.99</p>
+                    <p>T-shirt</p>
+                </a>
+            </div>
+<?php } ?>
+<?php for($i=1; $i<=3;$i++) { ?>
+            <div class="container_product">
+                <a href="item_page.php">
+                    <img src="img/mug.jpg" alt="product_image">
+                    <p>$4.99</p>
+                    <p>Mug</p>
+                </a>
+            </div>
+<?php } ?>
+<?php for($i=1; $i<=3;$i++) { ?>
+            <div class="container_product">
+                <a href="item_page.php">
+                    <img src="img/Hat.jpg" alt="product_image">
+                    <p>$2.99</p>
+                    <p>Hat</p>
+                </a>
+            </div>
+<?php } ?>
+<?php for($i=1; $i<=3;$i++) { ?>
+            <div class="container_product">
+                <a href="item_page.php">
+                    <img src="img/pants.jpg" alt="product_image">
+                    <p>$14.99</p>
+                    <p>Pants</p>
+                </a>
+            </div>
+<?php } ?>
+<!-- links for pagination -->
             <nav>
 <?php for($i=1; $i<=10;$i++) { ?>
             <a href=""><?=$i?></a>

@@ -1,3 +1,8 @@
+<!-- 
+    This is page is displayed when a user clicks a product from the list in the product_page.php
+    It displays the images and details of the product selected.
+    Owner: Rafael Arjay Malayba
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function(){
+            // this javascript code is responsible for hiding and displaying prompt when a user click on buy button
             $('#alert').hide();
             $('form').submit(function(){
                 $('#alert').html('Item added to the cart').fadeIn().delay(3000).fadeOut();;
@@ -18,6 +24,7 @@
     </script>
 </head>
 <body>
+<!-- call of header for the page -->
     <?php include_once('partials/header.php');?>
     <div class="content">
         <a href="product_page.php">Go Back</a>
@@ -38,6 +45,7 @@
             <input type="number" min=1 value=1>
         </form>
         <h2>Similar Items</h2>
+<!-- display recommended items related to the product -->
 <?php for($i=1; $i<=10;$i++) { ?>
         <div class="container_product">
             <a href="item_page.php">

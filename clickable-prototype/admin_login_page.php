@@ -13,7 +13,7 @@
         <table>
             <tr>
                 <td>Email:</td>
-                <td><input type="text"></td>
+                <td><input type="email"></td>
             </tr>
             <tr>
                 <td>Password:</td>
